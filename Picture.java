@@ -16,7 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square cesped;
-
+    private Person chico;
     /**
      * Constructor for objects of class Picture
      */
@@ -110,6 +110,13 @@ public class Picture
     public void atardecer()
     {
         sun.slowMoveVertical(100);
+        chico = new Person();
+        chico.moveVertical(20);
+        chico.moveHorizontal(-200);
+        chico.makeVisible();
+        
+        chico.slowMoveHorizontal(120);
+        
        
     }
 }
