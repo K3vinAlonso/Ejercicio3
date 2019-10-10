@@ -65,6 +65,7 @@ public class Picture
         cesped.moveVertical(130);
         
         sun.slowMoveVertical(-100);
+  
         
         
         
@@ -86,8 +87,9 @@ public class Picture
         }
     }
 
-    /**
-     * Change this picture to use color display
+    
+        /**
+     * Change this picture to black/white display
      */
     public void setColor()
     {
@@ -98,5 +100,16 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    
+  
+    
+    /**
+     * Change this picture to use color display
+     */
+    public void atardecer()
+    {
+        sun.slowMoveVertical(100);
+       
     }
 }
