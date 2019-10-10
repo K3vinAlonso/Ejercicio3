@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square cesped;
 
     /**
      * Constructor for objects of class Picture
@@ -51,9 +52,24 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveVertical(75);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        
+        cesped = new Square();
+        cesped.changeColor("green");
+        cesped.makeVisible();
+        cesped.changeSize(800);
+        cesped.moveHorizontal(-350);
+        cesped.moveVertical(130);
+        
+        sun.slowMoveVertical(-100);
+        
+        
+        
+        
+        
     }
 
     /**
